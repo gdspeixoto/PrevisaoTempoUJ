@@ -23,8 +23,8 @@ Este é um projeto de Previsão do Tempo que permite aos usuários obter informa
 
 ## Instalação
 
-1. Clone o repositório: `git clone https://github.com/seu-usuario/previsao-do-tempo.git`
-2. Acesse o diretório do projeto: `cd previsao-do-tempo`
+1. Clone o repositório: `git clone https://github.com/gdspeixoto/PrevisaoTempoUJ.git`
+2. Acesse o diretório do projeto: `cd PrevisaoTempoUJ`
 3. Instale as dependências: `npm install`
 
 ## Configuração da API
