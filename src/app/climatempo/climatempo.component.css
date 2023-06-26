@@ -1,0 +1,148 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #055ea8;
+  font-family: 'Raleway', sans-serif;
+}
+
+.climatempo{
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locate{
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+  .locate i{
+    font-size: 30px;
+    color: #005ea8;
+    margin-top: -20px;
+  }
+  .locate span{
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  ::ng-deep .mat-form-field-wrapper > .mat-form-field-flex {
+    padding-bottom: 0;
+  }
+
+.day{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .day span:nth-child(1){
+    font-weight: 600;
+  }
+
+.forecast{
+  width: 200px;
+  height: 200px;
+  background-color: #055ea8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  flex-direction: column;
+}
+  .forecast span:nth-child(1){
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .forecast span:nth-child(2){
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .forecast span:nth-child(2) .imgIndic{
+    width: 40px;
+    height: auto;
+    margin: 0 5px;
+  }
+
+.informations{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+}
+  .informations .info{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+  }
+  .informations .info i{
+    color: #055ea8;
+    font-size: 20px;
+  }
+  .informations .info .medidas{
+    font-size: 25px;
+  }
+  .informations .info .desc{
+    font-size: 12px;
+  }
+  .precipitation i{
+    margin: 15px 0;
+  }
+
+.dev{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+  .dev h5{
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .dev span{
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .dev p{
+    font-weight: 400;
+    font-size: 11px;
+  }
+
+
+
+
+
+
+

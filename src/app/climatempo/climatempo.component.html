@@ -1,0 +1,50 @@
+<div class="content">
+  <div class="climatempo">
+    <div class="locate">
+      <i class="fa-solid fa-location-dot"></i>
+      <form [formGroup]="FilterForm">
+      <mat-form-field class="no-padding-bottom" appearance="outline">
+        <mat-label>Selecione a cidade</mat-label>
+        <mat-select class="no-padding-bottom" formControlName="cbCidade">
+          <mat-option value="salvador, br">Salvador</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+    </div>
+    <div class="day">
+      <span>{{date | date:'EEEE'}}, {{ date | date:'dd \'de\' MMMM \'de\' yyyy' }}</span>
+      <span>{{ date | date:'HH:mm' }}</span>
+    </div>
+    <div class="forecast">
+      <div class="verifyConnection" *ngIf="!connection">
+        <span>{{ weatherData?.main.temp - 273.15 | number: '0.0-0'}}ºC</span>
+        <span><img class="imgIndic" [src]="'https://openweathermap.org/img/wn/' + (weatherData?.weather[0]?.icon || '') + '@2x.png'" alt="">{{weatherData?.weather[0]?.description}}</span>
+      </div>
+    </div>
+    <div class="informations">
+      <div class="info humidity">
+        <i class="fa-solid fa-droplet"></i>
+        <div class="verifyConnection" *ngIf="!connection">
+          <span class="medidas">{{ weatherData?.main.humidity/100 | percent }}</span>
+        </div>
+        <span class="desc">Umidade</span>
+      </div>
+      <div class="info precipitation">
+        <i [style.transform]="'rotate(' + (weatherData?.wind.deg || 0) + 'deg)'" class="fa-solid fa-arrow-up"></i>
+        <span class="desc">Direção do Vento</span>
+      </div>
+      <div class="info windSpeed">
+        <i class="fa-solid fa-wind"></i>
+        <div class="verifyConnection" *ngIf="!connection">
+          <span class="medidas">{{ weatherData?.wind.speed }}m/s</span>
+        </div>
+        <span class="desc">Velocidade do Vento</span>
+      </div>
+    </div>
+    <div class="dev">
+      <h5>Desenvolvido por {{dev}}</h5>
+      <span>{{universidadeCurso}}</span>
+      <p>{{anoAtual}}</p>
+    </div>
+  </div>
+</div>
