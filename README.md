@@ -54,6 +54,9 @@ Contribuições são bem-vindas! Se você deseja contribuir para o projeto, siga
 
 Certifique-se de seguir as diretrizes de contribuição e respeitar o código de conduta.
 
+## Imagem do Projeto
+<img src="https://github.com/gdspeixoto/PrevisaoTempoUJ/blob/main/images/front.png" alt="PrevisaoTempoUJ">
+
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
