@@ -33,7 +33,7 @@ Para utilizar a API do OpenWeather, siga as etapas abaixo:
 
 1. Acesse o site do OpenWeather (https://openweathermap.org) e crie uma conta
 2. Obtenha uma chave de API (API key) válida
-3. No arquivo `environment.ts`, substitua a constante `apiKey` pela sua chave de API
+3. No arquivo `weather.service.ts`, substitua a constante `apiKey` pela sua chave de API
 
 ## Como Usar
 
